@@ -4,6 +4,7 @@
     <nav>
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
+    <router-link to="/library">Library</router-link>
   </nav>
     <h2>Karlie kan säga det svenska alfabetet nu</h2>
 
@@ -13,11 +14,11 @@
 
 <script>
 import lines from './components/skills.vue'
-
+import posts from './components/Library.vue'
 export default {
   name: 'app',
   components: {
-    lines
+    lines,posts
   }
 }
 </script>
@@ -28,9 +29,9 @@ export default {
 body {
   background-color: #EEEEEE;
   font-family: 'Montserrat', sans-serif;
-  display: grid;
+  display: flex;
   grid-template-rows: auto;
-  justify-items: center;
+  justify-content: center;
   padding-top: 50px;
 }
 body, html {

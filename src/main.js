@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import VeeValidate from 'vee-validate'
 import router from './router'
-
+import 'lib-flexible/flexible.js'
 
 Vue.use(VeeValidate)
 Vue.config.productionTip = false
